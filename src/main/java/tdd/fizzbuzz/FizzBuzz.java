@@ -2,14 +2,20 @@ package tdd.fizzbuzz;
 
 public class FizzBuzz {
 
-    public String countOff(int i){
-        return  i%105 == 0 ? "FizzBuzzWhizz":
-                i % 35 == 0? "BuzzWhizz":
-                i%21 == 0 ? "FizzWhizz":
-                i%15 == 0 ? "FizzBuzz":
-                i%7 == 0 ? "Whizz":
-                i%3 == 0 ? "Fizz":
-                i%5 == 0 ? "Buzz":
-                String.valueOf(i);
+    public String countOff(int sequence) {
+        String output = "";
+        if (sequence % 3 == 0) {
+            output += "Fizz";
+        }
+        if (sequence % 5 == 0) {
+            output += "Buzz";
+        }
+        if (sequence % 7 == 0) {
+            output += "Whizz";
+        }
+
+
+
+        return output.isEmpty() ? String.valueOf(sequence) : output;
     }
 }
