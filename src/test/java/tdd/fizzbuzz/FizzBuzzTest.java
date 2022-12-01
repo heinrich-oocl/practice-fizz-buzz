@@ -42,5 +42,17 @@ public class FizzBuzzTest {
         assertEquals("Buzz", result);
     }
 
+    @Test
+    void should_get_whizz_when_countOff_given_multiple_of_7() {
+        //given
+        int sequence = 7;
+
+        //when
+        String result = new FizzBuzz().countOff(sequence);
+
+        //then
+        assertEquals("Whizz", result);
+    }
+
 
 }
