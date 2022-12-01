@@ -3,7 +3,8 @@ package tdd.fizzbuzz;
 public class FizzBuzz {
 
     public String countOff(int i){
-        return  i % 35 == 0? "BuzzWhizz":
+        return  i%105 == 0 ? "FizzBuzzWhizz":
+                i % 35 == 0? "BuzzWhizz":
                 i%21 == 0 ? "FizzWhizz":
                 i%15 == 0 ? "FizzBuzz":
                 i%7 == 0 ? "Whizz":
